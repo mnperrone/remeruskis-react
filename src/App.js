@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
+import Counter from './components/Counter/Counter';
+import Button from './components/Button/Button';
+import ClassCounter from './components/ClassCounter/ClassCounter';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
-function App() {
+const App = () => {
+  const title = 'Ecommerce'
+
+  const myFunction = () => {
+    console.log('hice click en el boton');
+  }
+
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>
-          Remeruskis
-        </h2>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ItemListContainer greeting={'Hola gente'} />
+      { true ? 'true' : 'false'}
+      <NavBar name={title}>
+        'Este es otro titulo'
+      </NavBar> 
+    
+      <h1>Comisión 31145</h1>
+      <Counter />
+      <ClassCounter />
+      <Button func={myFunction} label='Mi boton' />
+      
     </div>
   );
 }
 
 export default App;
+
+
