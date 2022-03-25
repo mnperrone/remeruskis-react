@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import Counter from './components/Counter/Counter';
 import Button from './components/Button/Button';
 import ClassCounter from './components/ClassCounter/ClassCounter';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
@@ -16,16 +15,16 @@ const App = () => {
   return (
 
     <div className="App">
-      <ItemListContainer greeting={'Hola gente'} />
-      { true ? 'true' : 'false'}
-      <NavBar name={title}>
+      {/* <ItemListContainer greeting={'Hola gente'} />
+      { true ? 'true' : 'false'} */}
+      {/* <NavBar name={title}>
         'Este es otro titulo'
-      </NavBar> 
-    
-      <h1>Comisión 31145</h1>
-      <Counter />
-      <ClassCounter />
-      <Button func={myFunction} label='Mi boton' />
+      </NavBar>  */}
+      <NavBar></NavBar>
+     
+      
+      {/* <ClassCounter /> */}
+      {/* <Button func={myFunction} label='Mi boton' /> */}
       
     </div>
   );
