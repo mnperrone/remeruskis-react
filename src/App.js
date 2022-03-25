@@ -20,7 +20,7 @@ const App = () => {
       {/* <NavBar name={title}>
         'Este es otro titulo'
       </NavBar>  */}
-      <NavBar></NavBar>
+      <NavBar/>
      
       
       {/* <ClassCounter /> */}
